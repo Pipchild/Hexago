@@ -8,7 +8,7 @@ test('Create a genre return 200', async () => {
     const res = await request(app)
     .post('/genre/create')
     .send({
-      genre: 'Piplette'
+      genre: 'testunitaire'
     })
     console.log(res.body)
     if (res.body.content._id) {
