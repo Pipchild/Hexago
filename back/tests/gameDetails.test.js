@@ -35,7 +35,6 @@ test('Create a gameDetails return 200', async () => {
       genres: [idGenre],
       description: "Triomphez de votre adversaire en développant et améliorant votre civilisation sur les plans civil, scientifique et militaire. 7 Wonders Duel est l'adaptation 2 joueurs de 7 Wonders."
     })
-    console.log(res.body)
     if (res.body.gameDetails._id) {
         id = res.body.gameDetails._id
     }

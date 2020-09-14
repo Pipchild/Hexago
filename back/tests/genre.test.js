@@ -10,7 +10,6 @@ test('Create a genre return 200', async () => {
     .send({
       genre: 'testunitaire'
     })
-    console.log(res.body)
     if (res.body.content._id) {
         id = res.body.content._id
     }
